@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="07/05/20||19:37:17" using="Simscape Multibody Link Version 7.0" from="SolidWorks 27.2.0"/>
+<ModelUnits mass="kilogram" length="inch"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="final_base" uid="final_base" version="150">
+<AssemblyFile name="final_base.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="brdge-1" uid="brdge-1" grounded="true" entityUid="brdge*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="target-1" uid="target-1" entityUid="target*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>1.8999999999999997 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="groundzero-2" uid="groundzero-2" entityUid="groundzero*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-2.0000000000000004 0 0</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>brdge-1</Uid>
+</InstancePath>
+<Position>1.8999999999999997 -0.02 -2.4242640687119144</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>target-1</Uid>
+</InstancePath>
+<Position>0 -0.02 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident11">
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>brdge-1</Uid>
+</InstancePath>
+<Position>1.8999999999999999 0 0</Position>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>target-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident13">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>brdge-1</Uid>
+</InstancePath>
+<Position>0 -0.02 -2</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>groundzero-2</Uid>
+</InstancePath>
+<Position>2 -0.02 -2</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident14">
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>brdge-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>groundzero-2</Uid>
+</InstancePath>
+<Position>2 0 0</Position>
+</ConstraintGeometry>
+</Coincident>
+<Parallel name="Parallel4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>brdge-1</Uid>
+</InstancePath>
+<Position>0.39999999999999863 -0.02 -3.9242640687119268</Position>
+<Axis>0.70710678118655024 0 -0.70710678118654491</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>target-1</Uid>
+</InstancePath>
+<Position>0 -0.02 -2.4242600000000003</Position>
+<Axis>-0.70710678118654624 0 0.70710678118654879</Axis>
+</ConstraintGeometry>
+</Parallel>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="brdge" uid="brdge*:*Default" version="129">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="brdge.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>237.72724320004363</Mass>
+<CenterOfMass>0.28646885962929519 0.0024441151625545789 -2.304470418695435</CenterOfMass>
+<Inertia>252.1819369152426 457.51544924814903 205.70961859624774 1.4458054935328664 -120.30195785937812 -0.24395700207173163</Inertia>
+</MassProperties>
+<GeometryFile name="brdge_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="groundzero" uid="groundzero*:*Default" version="128">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="groundzero.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>95.170562748477153</Mass>
+<CenterOfMass>0.98376134894928358 -0.01 -1.1918812428826902</CenterOfMass>
+<Inertia>45.374372837628002 76.324742397957564 30.956714264512794 0 -1.6770171941272634 0</Inertia>
+</MassProperties>
+<GeometryFile name="groundzero_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="target" uid="target*:*Default" version="123">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="target.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>101.0455703210712</Mass>
+<CenterOfMass>-0.6615148141468169 -0.01 -3.6278640242015618</CenterOfMass>
+<Inertia>138.7631428019634 201.90671378934772 63.150307358739028 0 -52.085695826812703 0</Inertia>
+</MassProperties>
+<GeometryFile name="target_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
