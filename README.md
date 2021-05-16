@@ -1,6 +1,4 @@
-# TKR_MatlabInternship
-
-**Physical Modelling using Simulink - Internship**  
+**Physical Modelling using Simulink Simscape - Internship**  
 - **Final Task**  
   - Throwing Shagai (object) to a designated landing zone  
   - Contains two files, one using only Simulink and other using Simulink along with Solidworks  
